@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: red;
+    color: black;
+}
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+.custom-card {
+    border: none !important;
+    border-radius: 16px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+}
+.custom-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px black(0,0,0,0.05) !important;
+}
+.card-img-top {
+    border-top-left-radius: 16px !important;
+     border-top-right-radius: 16px !important;
+     height: 200px;
+     object-fit: cover;
+     filter: grayscale(10%) contrast(95%);
+}

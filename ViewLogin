@@ -1,0 +1,19 @@
+<?php 
+session_start();
+$usuario_correcto  = 'Kevin';
+$password_correcta = '12345678';
+if ($_POST['usuario'] === $usuario_correcto && 
+$_POST['password'] === $password_correcta) { 
+    $_SESSION['usuario'] = $usuario_correcto;
+ header('Location: dashboard.php'); 
+ exit;
+  } else {
+      $error = 'Usuario o contraseña incorrectos.'; 
+  }
+  <?phpsession_start();
+  if (!isset($_SESSION['usuario'])) {
+    header('Location: Login.php');
+    exit;
+  }
+  <p> Bienvenido, <?=htmlspecialchars($_SESSION['usuario']) ?> </p>
+  
